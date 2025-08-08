@@ -1,0 +1,372 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+    font-family: sans-serif;
+}
+body{
+    /* background-color: #1f242d; */
+    height: 100vh; /* ارتفاع يساوي طول الشاشة */
+    width: 100%;
+    overflow: hidden;
+    
+}
+.logo{
+    
+    width: 100%;
+    position: relative;
+    top:55px ;
+    left: 40px;
+
+}
+.logo a {
+    text-decoration: none;
+    color: white;
+    font-weight: 800;
+    font-size: xx-large;
+    
+}
+
+.sec ul li{
+    display: inline;
+    position: relative;
+    font-weight: 700;
+    font-size: large;
+    margin-left: 50px;
+    left: 30px;
+    transition: 0.5s;
+    
+}
+nav{
+    visibility: hidden;
+    opacity: 0;
+    animation: show-content 1.7s ease-in-out forwards;
+}
+@keyframes show-content {
+    100%{
+        visibility: visible;
+        opacity: 1;
+    }
+    
+}
+.sec ul li a{
+ text-decoration: none;
+color: white;
+transition: 0.5s;
+
+}
+.sec ul{
+    position: relative;
+    margin-top: 30px;
+    margin-right: 80px;
+    display: flex;
+    justify-content: end;
+    color: white;
+    transition: 0.9s;
+
+}
+.sec ul li a:hover
+{
+    color: #7cf03d;
+    text-shadow: 1px 1px 20px #7cf03d;
+}
+.sec ul li .about {
+    
+    text-shadow: 1px 1px 20px #7cf03d;
+    color: #7cf03d;
+}
+section{
+    position: relative;
+    top: 150px;
+    color: white;
+    left: 80px;
+    width: 650px;
+    visibility: hidden;
+    opacity: 0;    
+    animation: show-section 2.9s ease-in-out forwards;
+}
+@keyframes show-section {
+    100%{
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+section .name{
+    font-size: xx-large;
+    font-weight:bolder;
+    margin-bottom: 8px;
+}
+section .vari{
+    
+    font-weight: 800;
+    display: inline;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.bton{
+    margin-top: 40px;
+    margin-left: 60px;
+    border: 2px solid #7cf03d;
+    background-color: #7cf03d;
+    border-radius: 40px;
+    padding: 10px 30px;
+    font-weight: 600;
+    color: #1f242d;
+    font-size: 16px;
+    box-shadow: 0 0 10px #7cf03d;
+    transition: 0.7s;
+    letter-spacing: 1px;
+    position: relative; 
+    display: inline;
+    width: 400px;
+    margin-bottom: 20px;
+
+    
+}
+.bton:hover{
+    box-shadow: 1px 1px 15px #7cf03d;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+.sic a{
+    
+    font-size: 20px;
+    position: relative;
+    top: 9px;
+    left: 90px;
+    margin: 2px;
+    padding: 8px;
+    border-radius: 50%;
+    border:2px solid #7cf03d;
+    color: #7cf03d;
+    margin-left: 30px;
+    transition: 0.5s;
+}
+.sic a:hover{
+    box-shadow: 1px 1px 15px #7cf03d;
+    background-color: #7cf03d;
+    color: #1f242d;
+}
+.vari h2{
+    display: inline;
+}
+.me{
+    position: relative;
+    top: -500px;
+    left: 690px;
+    
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    overflow: hidden;
+    z-index: 1;
+    
+    box-shadow: 1px 1px 20px #7cf03d;
+    
+}
+.me img{
+    
+    border-radius: 50%;
+    margin-left: 20px;
+    margin-top: -8px;
+    z-index: 3;
+    
+    
+
+}
+/* .cur{
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    position: relative;
+    top: -830px;
+    left: 690px;
+    z-index: 0;
+    background:conic-gradient(transparent,transparent,transparent,#7cf03d);
+} */
+/* .sup{
+    position: relative;
+    top: -1225px;
+    left: 684px;
+    background-color: rgb(255, 0, 0);
+    width: 460px;
+    height: 460px;
+    border-radius: 50%;
+    z-index: -1;
+    overflow: hidden;
+} */
+ .desc{
+    margin-top: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+ }
+ .bars{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    z-index: -99;
+ }
+ .bars .bar{
+    width: 100%;
+    height: 100%;
+    background-color: #1f242d;
+    
+    transform: translateY(-100%);
+    border-radius:0 50px 50px 50px ;
+    animation: show-bars .5s ease-in-out forwards;
+    animation-delay: calc(0.1s * var(--i));
+ }
+ @keyframes show-bars {
+    100%{
+        transform: translateY(0%);
+        border-radius:0 0 0 0 ;
+    }
+ }
+ /* .vari span{
+    position: relative;
+    display: inline-block;
+    color: #7cf03d;
+    font-size: 40px;
+    animation: texto 16s linear infinite;
+    animation-delay:calc(-4s * var(--i)) ;
+ }
+ @keyframes texto {
+    25% ,100%{
+        display: none;
+    }
+    
+ } */
+  .vari span {
+  position: absolute;
+  top: 55px;
+  left: 90px;
+  opacity: 0;
+  color: #7cf03d;
+  font-size: 40px;
+  animation: texto 16s infinite steps(1, end);
+}
+
+.vari span:nth-child(1) {
+  animation-delay: 0s;
+}
+.vari span:nth-child(2) {
+  animation-delay: 4s;
+}
+.vari span:nth-child(3) {
+  animation-delay: 8s;
+}
+.vari span:nth-child(4) {
+  animation-delay: 12s;
+}
+
+@keyframes texto {
+  0% { opacity: 1; }
+  25% { opacity: 0; }
+  100% { opacity: 0; }
+}
+@media (max-width:500px) {
+    .bars{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        z-index: -99;
+    }
+    .bars .bar{
+    width: 100vh;
+    height: 100vh;
+    background-color: #1f242d;
+    
+    transform: translateY(-100%);
+    border-radius:0 50px 50px 50px ;
+    animation: show-bars .5s ease-in-out forwards;
+    animation-delay: calc(0.1s * var(--i));
+ }
+
+      body{
+    /* background-color: #1f242d; */
+          
+    animation: back 2s linear forwards;
+}
+@keyframes back {
+    100%{
+        background-color: #1f242d;
+    }
+}
+.sec{
+    position: relative;
+    left: 910px;
+    
+    top: 150px;
+
+}
+.sec ul li a{
+    font-size: 50px;
+    
+}
+    section{
+         position: relative;
+         top: 900px;
+    }
+    
+    .me{
+        position: relative;
+        top: -1740px;
+        left: 250px;
+        width: 600px;
+        height: 600px;
+    }
+    .me img{
+        position: relative;
+        left: -10px;
+        width: 600px;
+        height: 900px;
+    }
+    .toto{
+        position: relative;
+        top: 300px;
+        left: 100px;
+        transform: scale(1.5,1.5);
+    }
+    .name h1{
+        position: relative;
+        top: -30px;
+        left: 230px;
+    }
+    /* .desc{
+        position: relative;
+        top: 20px;
+        
+    } */
+    .desc p {
+        width: 700px;
+        font-size: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-left: 20px;
+    }
+    .bton{
+        position: relative;
+        width: 100%;
+        size: 40px;
+        left: 34px;
+    }
+    .lonk{
+        position: relative;
+        top: 20px;
+        left: 120px;
+        
+    }
+    .lonk a {
+        padding: 18px;
+    }
+    .logo{
+        position: relative;
+        left: 390px;
+        top: 120px;
+    }
+    .logo a{
+        font-size: 100px;
+    }
+}
